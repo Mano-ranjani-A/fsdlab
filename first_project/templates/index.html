@@ -1,0 +1,226 @@
+<!-- <!DOCTYPE html>
+{% load static %}
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>BIO-DATA</title>
+  </head>
+  <body>
+    <h2><center><strong> BIO-DATA </strong></center></h2>
+    <figure>
+     
+      <img src="{% static 'My Image.png' %}" alt="Profile Picture">
+    </figure>
+    &emsp;<strong>Pratheeksha Prathap </strong><br />
+    &emsp;Alappuzha, Kerala-690511 <br />
+    &emsp;pratheekshatheprathap@gmail.com<br />
+    &emsp;09526658522
+    <hr />
+    <h3> &emsp;PROFESSIONAL SUMMARY </h3>
+    <p> &emsp;Currently pursuing MTech in Computer Science and Engineering from Amrita
+        Vishwa Vidyapeetham and also a MSc Computer Science Graduate.<br /> &emsp;Very much
+        hardworking and driven to work quickly and effectively on projects in all types of
+        environments.
+    </p>
+    <hr />
+    <h3> &emsp;EDUCATION </h3>
+    <table border="1">
+      <tr>
+        <th>Qualification</th>
+        <th>University</th>
+        <th>Percentage</th>
+        <th>Year of Passing</th>
+      </tr>
+      <tr>
+        <td>MTech CSE</td>
+        <td>Amrita University</td>
+        <td>---</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>MSc Computer Science</td>
+        <td>MG University</td>
+        <td>87</td>
+        <td>2020</td>
+      </tr>
+      <tr>
+        <td>BSc Computer Science</td>
+        <td>Kerala University</td>
+        <td>84</td>
+        <td>2018</td>
+      </tr>
+    </table>
+    &emsp;<hr />
+    <h3>&emsp;TECHNICAL SKILL</h3>
+    <ul>
+      <li>Basic Knowledge in Python, Java and C++</li>
+      <li>Basic Knowledge in Computer Networking</li>
+      <li>Basic Knowledge in Machine Learning</li>
+      <li>Basic Knowledge in SQL Queries</li>
+    </ul>
+    <hr />
+    <h1 class="heading"> My Projects </h1>
+    <div class="project">
+
+<ul>
+
+    <li>
+
+        <a href="{% url 'tictactoe' %}">Tic-Tac-Toe</a>
+
+        </li>
+
+        <li>
+
+        <a href="{% url 'wordle' %}">Wordle</a>
+
+        </li>
+
+</ul> 
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>FSD Assignment 1</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.booystrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #fff;">Manoranjani Asokan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </section>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <p class="promo-tit ">Software Developer</p>
+                    <p>To work in a challenging environment and be a part of a progressive
+                        organization that gives a scope to enhance my knowledge and
+                        utilizing my skills towards the growth of the organization.
+                    </p>
+                </div>
+                <div class="col-md-5 text-right myimg">
+                    <img src="{% static 'manoimg.jpg' %}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'wave1.png' %}" class="wave1">
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h1 class="exp-tit text-center">Experience</h1>
+            <div class="row">
+                <div class="col-md-4 text-center expclass">
+                    <img src="{% static 'arundathi.jpg' %}" class="exp-im">
+                    <p>
+                    <h4>Andhadhi</h4>
+                    <h5>Jan 2021 - Mar 2021</h5>
+                    </p>
+                    <h6>Booking for wedding venue website</h6>
+                    <h6>Project worked at Sensber Technologies</h6>
+                </div>
+                <div class="col-md-4 text-center expclass">
+                    <img src="{% static 'medi.jpg' %}" class="exp-im">
+                    <p>
+                    <h4>Medi360</h4>
+                    <h5>April 2021 - Sept 2021</h5>
+                    </p>
+                    <h6>All in one medical application</h6>
+                    <h6>Project worked at Phantom Smart Solutions</h6>
+                </div>
+                <div class="col-md-4 text-center expclass">
+                    <img src="{% static 'thuis.jpg' %}" class="exp-im">
+                    <p>
+                    <h4>Thuiskappers</h4>
+                    <h5>April 2021 - Sept 2021</h5>
+                    </p>
+                    <h6>Hair Salon application</h6>
+                    <h6>Project worked at Phantom Smart Solutions</h6>
+                </div>
+             
+            </div>
+        </div>    
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h1 class="exp-tit text-center">Skills</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="skill-tit">I'm a technical expertise in</p>
+                    <ul>
+                        <li>Machine Learning algorithms</li>
+                        <li>Python</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap Framework</li>
+                        <li>Ionic Framework(Angular)</li>
+                        <li>Angular Framework</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'network.png' %}" class="img-fluid">
+                </div>
+            </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+          <h1 class="exp-tit text-center">My projects</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="{% static 'projects-icon.jpg' %}" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <!-- <p class="skill-tit">My projects in Full stack development are as follows</p> -->
+                <ul>
+                    <li><a href="{% url 'tictactoe' %}">Tic-Tac-Toe</a></li>
+                    <li><a href="{% url 'wordle' %}">Wordle</a></li> 
+                    <li><a href="{% url 'wordle' %}">To-do</a></li>       
+                    <li><a href="{% url 'wordle' %}">Employee</a></li>  
+                    <li><a href="{% url 'wordle' %}">Blog</a></li>                  
+                </ul>
+            </div>
+          </div>
+  </section>
+    <section id="socmed">
+        <div class="container text-center">
+            <p style="text-transform: uppercase; margin-top: 15px; margin-bottom: 20px;">Contact me on Social Media</p>
+            <div class="soc-icons" style="margin-bottom: 40px;">
+                <a><img src="{% static 'facebook-icon.png' %}"></a>
+                <a><img src="{% static 'instagram-icon.png' %}"></a>
+                <a><img src="{% static 'linkedin-icon.png' %}"></a>
+                <a><img src="{% static 'twitter-icon.png' %}"></a>
+                <a><img src="{% static 'snapchat-icon.png' %}"></a>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

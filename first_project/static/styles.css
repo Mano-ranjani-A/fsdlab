@@ -1,0 +1,124 @@
+/* body{
+display: flex;
+justify-content: center;
+text-align: center;
+background-color: beige;
+}
+img{
+    height: 300px;
+    width: 300px;
+    margin-left: 10%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic ;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background-image:linear-gradient(to right, #a517ba,#5f1782) ;
+    padding: 1% !important;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar li a{
+    color: #fff !important;
+    font-weight: 600;
+}
+#banner{
+    background-image:linear-gradient(to right, #a517ba,#5f1782) ;
+    color: #fff;
+    padding-top: 5%;
+}
+.promo-tit{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.myimg img{
+    border-radius: 50px;
+    height: 350px;
+    width: 250px;
+}
+.wave1{
+    width: 100%;
+}
+#experience{
+    padding: 80px 0;
+}
+.exp-im{
+    width: 100px;
+    margin-top: 20px;
+}
+.expclass{
+    padding: 20px;
+}
+.expclass img{
+    width: 200px;
+    height: 200px;
+}
+.expclass h4{
+    padding: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.exp-tit::before{
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.exp-tit::after{
+    content: '';
+    background: #7b1798;
+    height: 10px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: block;
+    transform: translateY(8px);
+}
+.skill-tit{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8%;
+    font-style: normal;
+}
+#skills ul{
+    margin-left: 20px;
+    
+}
+#skills ul li{
+    margin: 10px 0;
+}
+#soc-med{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#soc-med p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.soc-icons img{
+    width: 60px;
+    transition: 0.5s;
+}
+.soc-icons a:hover img{
+    transform: translateY(-10px);
+}

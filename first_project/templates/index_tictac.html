@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+{% load static %}
+<head>
+	<meta name="viewport">
+
+<link href="{% static 'style_tictac.css' %}" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{% static 'tic_tac.js' %}"></script>
+
+</head>
+
+<body>
+	<div id="main">
+		<h1><u>TIC TAC TOE</u></h1>
+		<br>
+		<br>
+		  <p id="inst"><b class="p1">PLAYER 1</b> as <b id="plr1">X</b>&nbsp &
+            <b class="p1">PLAYER 2</b> as <b id="plr2" >O</b><br><b id="frst"><b class="p1">PLAYER 1</b> will start first</b><br> 
+            </p>
+            <br>
+		<input type="text" id="b1" onclick="func_3(); myfunc();" readonly>
+		<input type="text" id="b2" onclick="func_4(); myfunc();" readonly>
+		<input type="text" id="b3" onclick="func_5(); myfunc();" readonly>
+		<br>
+		<br>
+
+		<input type="text" id="b4" onclick="func_6(); myfunc();" readonly>
+		<input type="text" id="b5" onclick="func_7(); myfunc();" readonly>
+		<input type="text" id="b6" onclick="func_8(); myfunc();" readonly>
+		<br>
+		<br>
+
+		<input type="text" id="b7" onclick="func_9(); myfunc();" readonly>
+		<input type="text" id="b8" onclick="func_10();myfunc();" readonly>
+		<input type="text" id="b9" onclick="func_11();myfunc();" readonly>
+		<br>
+		<br>
+		<br>
+
+		<button id="resetButton" onclick="func_2()">
+			RESET
+		</button>
+
+		<br>
+		<br>
+	</div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<head>
+    <title>
+        Tic Tac Toe
+    </title>
+    <link rel = "stylesheet" href="{% static 'style_tictac.css' %}">
+    <script src="{% static 'tic_tac.js' %}"></script>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+</body>
+</html>
